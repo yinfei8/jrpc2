@@ -217,7 +217,7 @@ func (s *Server) dispatch(next jmessages, ch channel.Sender) func() error {
 			t := t
 
 			wg.Add(1)
-			var before_chan = make(chan bool, 1)
+			var before = make(chan bool, 1)
 
 			run := func() {
 				defer wg.Done()
@@ -225,14 +225,14 @@ func (s *Server) dispatch(next jmessages, ch channel.Sender) func() error {
 					defer s.nbar.Done()
 				}
 
-				before_chan <- true
+				before <- true
 				t.val, t.err = s.invoke(t.ctx, t.m, t.hreq)
 			}
 
 			go run()
 
-			<- before_chan
-			close(before_chan)
+			<- before
+			close(before)
 		}
 
 		// Wait for all the handlers to return, then deliver any responses.
