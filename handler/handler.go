@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/code"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/code"
 )
 
 // A Func adapts a function having the correct signature to a jrpc2.Handler.

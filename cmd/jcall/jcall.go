@@ -18,11 +18,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/channel"
-	"github.com/creachadair/jrpc2/channel/chanutil"
-	"github.com/creachadair/jrpc2/jctx"
-	"github.com/creachadair/jrpc2/jhttp"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/channel/chanutil"
+	"github.com/yinfei8/jrpc2/jctx"
+	"github.com/yinfei8/jrpc2/jhttp"
 )
 
 var (

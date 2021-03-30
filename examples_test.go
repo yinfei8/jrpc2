@@ -7,10 +7,10 @@ import (
 	"log"
 	"strings"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/channel"
-	"github.com/creachadair/jrpc2/code"
-	"github.com/creachadair/jrpc2/handler"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/code"
+	"github.com/yinfei8/jrpc2/handler"
 )
 
 var (

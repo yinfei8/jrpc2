@@ -3,8 +3,8 @@ package server
 import (
 	"errors"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/channel"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/channel"
 )
 
 // A Simple server manages execution of a server for a single service instance.

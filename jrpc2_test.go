@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/channel"
-	"github.com/creachadair/jrpc2/code"
-	"github.com/creachadair/jrpc2/handler"
-	"github.com/creachadair/jrpc2/jctx"
-	"github.com/creachadair/jrpc2/server"
 	"github.com/google/go-cmp/cmp"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/code"
+	"github.com/yinfei8/jrpc2/handler"
+	"github.com/yinfei8/jrpc2/jctx"
+	"github.com/yinfei8/jrpc2/server"
 )
 
 var notAuthorized = code.Register(-32095, "request not authorized")

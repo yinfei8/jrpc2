@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/creachadair/jrpc2/channel"
-	"github.com/creachadair/jrpc2/code"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	"github.com/yinfei8/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/code"
 )
 
 func TestParseRequests(t *testing.T) {

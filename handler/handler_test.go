@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/creachadair/jrpc2"
 	"github.com/google/go-cmp/cmp"
+	"github.com/yinfei8/jrpc2"
 )
 
 // Verify that the New function correctly handles the various type signatures

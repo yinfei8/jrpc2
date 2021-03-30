@@ -1,8 +1,8 @@
 package server
 
 import (
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/channel"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/channel"
 )
 
 // Local represents a client and server connected by an in-memory pipe.

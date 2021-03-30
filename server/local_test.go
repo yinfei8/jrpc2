@@ -7,8 +7,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/handler"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/handler"
 )
 
 var testOpts = &LocalOptions{

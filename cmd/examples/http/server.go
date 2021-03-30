@@ -18,11 +18,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/handler"
-	"github.com/creachadair/jrpc2/jhttp"
-	"github.com/creachadair/jrpc2/metrics"
-	"github.com/creachadair/jrpc2/server"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/handler"
+	"github.com/yinfei8/jrpc2/jhttp"
+	"github.com/yinfei8/jrpc2/metrics"
+	"github.com/yinfei8/jrpc2/server"
 )
 
 var port = flag.Int("port", 0, "Service port")

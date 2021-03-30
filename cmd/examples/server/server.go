@@ -16,11 +16,11 @@ import (
 	"net"
 	"os"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/code"
-	"github.com/creachadair/jrpc2/handler"
-	"github.com/creachadair/jrpc2/metrics"
-	"github.com/creachadair/jrpc2/server"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/code"
+	"github.com/yinfei8/jrpc2/handler"
+	"github.com/yinfei8/jrpc2/metrics"
+	"github.com/yinfei8/jrpc2/server"
 )
 
 // The math type defines several arithmetic methods we can expose via the

@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/creachadair/jrpc2"
+	"github.com/yinfei8/jrpc2"
 )
 
 // A Bridge is a http.Handler that bridges requests to a JSON-RPC client.

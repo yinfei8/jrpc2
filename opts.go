@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/creachadair/jrpc2/code"
-	"github.com/creachadair/jrpc2/metrics"
+	"github.com/yinfei8/jrpc2/code"
+	"github.com/yinfei8/jrpc2/metrics"
 )
 
 // ServerOptions control the behaviour of a server created by NewServer.

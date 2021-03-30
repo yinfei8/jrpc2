@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/creachadair/jrpc2/metrics"
+	"github.com/yinfei8/jrpc2/metrics"
 )
 
 // ServerMetrics returns the server metrics collector. If the server does not

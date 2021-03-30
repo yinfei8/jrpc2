@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/channel"
-	"github.com/creachadair/jrpc2/handler"
-	"github.com/creachadair/jrpc2/server"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/handler"
+	"github.com/yinfei8/jrpc2/server"
 )
 
 type testService struct {

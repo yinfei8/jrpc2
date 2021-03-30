@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/creachadair/jrpc2"
-	"github.com/creachadair/jrpc2/handler"
-	"github.com/creachadair/jrpc2/server"
+	"github.com/yinfei8/jrpc2"
+	"github.com/yinfei8/jrpc2/handler"
+	"github.com/yinfei8/jrpc2/server"
 )
 
 func TestBridge(t *testing.T) {

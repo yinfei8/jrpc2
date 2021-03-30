@@ -9,7 +9,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/creachadair/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/channel"
 )
 
 var benchMessage = map[string]interface{}{

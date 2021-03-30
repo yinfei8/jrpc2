@@ -1,4 +1,4 @@
-module github.com/creachadair/jrpc2
+module github.com/yinfei8/jrpc2
 
 require (
 	github.com/google/go-cmp v0.5.1

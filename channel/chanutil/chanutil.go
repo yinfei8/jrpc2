@@ -5,7 +5,7 @@ package chanutil
 import (
 	"strings"
 
-	"github.com/creachadair/jrpc2/channel"
+	"github.com/yinfei8/jrpc2/channel"
 )
 
 // Framing returns a channel.Framing described by the specified name, or nil if
