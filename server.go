@@ -203,32 +203,36 @@ func (s *Server) dispatch(next jmessages, ch channel.Sender) func() error {
 	// Resolve all the task handlers or record errors.
 	start := time.Now()
 	tasks := s.checkAndAssign(next)
-	last := len(tasks) - 1
+	//last := len(tasks) - 1
 
 	// Ensure all notifications already issued have completed; see #24.
 	s.waitForBarrier(tasks.numValidNotifications())
 
 	return func() error {
 		var wg sync.WaitGroup
-		for i, t := range tasks {
+		for _, t := range tasks {
 			if t.err != nil {
 				continue // nothing to do here; this task has already failed
 			}
 			t := t
 
 			wg.Add(1)
+			var before_chan = make(chan bool, 1)
+
 			run := func() {
 				defer wg.Done()
 				if t.hreq.IsNotification() {
 					defer s.nbar.Done()
 				}
+
+				before_chan <- true
 				t.val, t.err = s.invoke(t.ctx, t.m, t.hreq)
 			}
-			if i < last {
-				go run()
-			} else {
-				run()
-			}
+
+			go run()
+
+			<- before_chan
+			close(before_chan)
 		}
 
 		// Wait for all the handlers to return, then deliver any responses.
